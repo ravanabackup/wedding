@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Text</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .text-container {
+            width: 80%;
+            max-width: 800px;
+        }
+        .message {
+            font-size: 4vw;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .message {
+                font-size: 7vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="message">
+            Some trust are given for lifelong.<br>
+            But some don't understand the value of it.
+        </div>
+    </div>
+</body>
+</html>
